@@ -1,0 +1,16 @@
+OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun  --nproc_per_node=4 --master_port=54331  ./neural_field_diffusion/triplane_fitting/train.py \
+    --dataset_voxel='/public/home/lvlin/dataset_share/ms_120k/voxel' \
+    --dataset_occup='/public/home/lvlin/dataset_share/ms_120k/occup' \
+    --dataset_consm='/public/home/lvlin/dataset_share/U_res' \
+    --dataset_list='/public/home/lvlin/dataset_share/dataset_Cmat_train_exe.txt' \
+    --dataset_list_vali='/public/home/lvlin/dataset_share/dataset_Cmat_vali_exe.txt' \
+    --dataset_pro='/public/home/lvlin/dataset_share/dataset_Cmat_train_exe.json' \
+    --dataset_pro_vali='/public/home/lvlin/dataset_share/dataset_Cmat_vali_exe.json' \
+    --resolution=128 \
+    --batch_size=6 \
+    --points_batch_size=200000 \
+    --channels=32 \
+    --aggregate_fn='sum' \
+    --log_dir='consm_pro_dec' \
+    --edr_val=0.01 \
+    --load_ckpt_path='/public/home/lvlin/microstru/NFD/nfd_pro/ckpts/model_epoch_4_loss_0.0010521330984619316.pt'

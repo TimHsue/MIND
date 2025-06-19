@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python ./save_plane.py \
+    --dataset_voxel='/public/home/lvlin003/lvlin_share/ms_120k/voxel' \
+    --dataset_occup='/public/home/lvlin003/lvlin_share/ms_120k/occup' \
+    --dataset_list='/public/home/lvlin003/dataset/ms_120k/split_0.txt' \
+    --dataset_triplane='/public/home/lvlin003/dataset/ms_120k/triplane_sym_16' \
+    --resolution=128 \
+    --batch_size=32 \
+    --points_batch_size=10000 \
+    --aggregate_fn='cat' \
+    --log_dir='save_mesh0' \
+    --repeat=16 \
+    --load_ckpt_path='/public/home/lvlin003/microstru/NFD/nfd/ckpts/model_epoch_232_loss_4.026009793840289.pt'
