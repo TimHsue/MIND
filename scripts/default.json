@@ -1,0 +1,12 @@
+{
+  "ae": "checkpoints/mind_autoencoder.pt",
+  "dm": "checkpoints/mind_diffusion.pkl",
+  "steps": 32,
+  "cfg_scale": 7,
+  "sigma_max": 80,
+  "seed": 42,
+  "condition_profile": "v3",
+  "sym": 48,
+  "batch_size": 4,
+  "noise_device": "cpu"
+}

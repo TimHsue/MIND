@@ -1,0 +1,4 @@
+# Optional CUDA physics dependencies for PyTorch 2.4.1 / CUDA 12.1.
+--find-links https://data.pyg.org/whl/torch-2.4.0+cu121.html
+torch-scatter==2.1.2
+linear-operator==0.6.1

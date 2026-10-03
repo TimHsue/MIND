@@ -1,0 +1,13 @@
+# Runtime dependencies.
+torch==2.4.1
+numpy==2.0.1
+scipy==1.14.1
+scikit-image==0.25.0
+matplotlib==3.10.0
+pillow==11.0.0
+tensorboardX==2.6.2.2
+tqdm==4.66.5
+click==8.3.2
+psutil==6.1.1
+requests==2.32.3
+pyamg==5.3.0  # CPU physical solver

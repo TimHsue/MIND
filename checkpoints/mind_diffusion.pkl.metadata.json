@@ -1,0 +1,21 @@
+{
+  "runtime_dataset_kwargs": {
+    "condition_profile": "v3",
+    "latent_scale": 4,
+    "latent_mean": 0,
+    "crop_resolution": 32
+  },
+  "default_inference": {
+    "steps": 32,
+    "cfg_scale": 7,
+    "sigma_max": 80,
+    "sampler": "heun-cfg",
+    "batch_size": 4,
+    "noise_device": "cpu"
+  },
+  "format": "inference-only persistent pickle",
+  "license": "CC-BY-NC-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "architecture": "MINDDenoiser",
+  "backbone": "MINDUNet"
+}
